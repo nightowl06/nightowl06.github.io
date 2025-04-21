@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title"></title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div class="container">
+
+    <header>
+
+        <img src="img/photo.jpg" alt="Ваше фото" class="photo">
+        <div class="container-header">
+            <h1 data-i18n="name"></h1>
+            <div class="profession" data-i18n="profession"></div>
+        </div>
+
+        <div class="language-switcher">
+            <div class="custom-select-wrapper">
+                <div class="custom-select-trigger">
+                    <img src="img/russian.png" alt="RU" class="flag-icon">
+                    <span>RU</span>
+                    <div class="arrow"></div>
+                </div>
+                <div class="custom-options">
+                    <span class="custom-option" data-value="ru">
+                        <img src="img/russian.png" alt="RU" class="flag-icon">
+                        <span>RU</span>
+                    </span>
+                    <span class="custom-option" data-value="en">
+                        <img src="img/english.png" alt="EN" class="flag-icon">
+                        <span>EN</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="personal-info">
+        <div class="location">
+            <img src="img/location.jpg" alt="location"/>
+            <span data-i18n="location"></span>
+        </div>
+
+        <div class="container-contact">
+            <div class="contact-item">
+                <a href="mailto:mikhaylov978@gmail.com">
+                    <img src="img/email.jpg" alt="email"/>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="http://t.me/MRs195" target="_blank">
+                    <img src="img/telegram.jpg" alt="telegram"/>
+                </a>
+            </div>
+            <div class="contact-item">
+                <a href="https://www.linkedin.com/in/vlmi99" target="_blank">
+                    <img src="img/linkedin.jpg" alt="linkedin"/></a>
+            </div>
+            <div class="contact-item">
+                <a href="https://github.com/Mr-R119" target="_blank">
+                    <img src="img/github.jpg" alt="github"/>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="summary">
+        <h2 data-i18n="summary_title"></h2>
+        <p data-i18n="summary_content"></p>
+    </section>
+
+    <section class="experience">
+        <h2 data-i18n="experience_title"></h2>
+        <div class="job-item">
+            <h3 data-i18n="job_company"></h3>
+            <p class="job-title" data-i18n="job_start_date"></p>
+            <p class="job-title" data-i18n="job_title"></p>
+            <ul data-i18n-section="job_description_1">
+                <li data-i18n="job_desc_1_1"></li>
+                <li data-i18n="job_desc_1_2"></li>
+                <li data-i18n="job_desc_1_3"></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="education">
+        <h2 data-i18n="education_title"></h2>
+        <div class="education-item">
+            <h3 data-i18n="education_speciality"></h3>
+            <span class="education_institution" data-i18n="education_institution_1"></span>
+            <p class="degree" data-i18n="education_degree_1"></p>
+        </div>
+    </section>
+
+    <section class="skills">
+        <h2 data-i18n="skills_title"></h2>
+        <div class="skill-list" data-i18n-section="skills_list">
+            <h3>Backend разработка</h3>
+            <div class="skill-list-container">
+                <span class="content-item">Java 7-17</span>
+                <span class="content-item">Spring Framework</span>
+                <span class="content-item">Spring Boot</span>
+                <span class="content-item">JPA/Hibernate</span>
+                <span class="content-item">RESTful API</span>
+                <span class="content-item">SOAP</span>
+                <span class="content-item">OSGI Framework</span>
+            </div>
+
+            <h3>Базы данных</h3>
+            <div class="skill-list-container">
+                <span class="content-item">PostgreSQL</span>
+                <span class="content-item">Couchbase</span>
+                <span class="content-item">H2</span>
+            </div>
+
+            <h3>Инструменты</h3>
+            <div class="skill-list-container">
+                <span class="content-item">Docker</span>
+                <span class="content-item">Jenkins</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="languages">
+        <h2 data-i18n="languages_title"></h2>
+        <ul class="language-list" data-i18n-section="language_list">
+            <li data-i18n="language_1"></li>
+            <li data-i18n="language_2"></li>
+        </ul>
+    </section>
+
+    <section class="interests">
+        <h2 data-i18n="interests_title"></h2>
+        <p data-i18n="interests_content"></p>
+    </section>
+
+    <footer>
+        <p data-i18n="footer">© 2023 Михайлов Владимир. Все права защищены.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/i18n.js"></script>
+</div>
+</body>
+</html>
